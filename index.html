@@ -8,7 +8,7 @@
   </head>
 
   <body class="">
-    <div class="container mx-auto p-8 pt-4">
+    <div class="container mx-auto p-2 md:p-8 md:pt-4">
       <!-- Header -->
       <header class="text-center">
         <div class="container mx-auto flex items-center">
@@ -16,9 +16,9 @@
         </div>
       </header>
 
-      <div class="container mx-auto p-8 py-[80px]">
+      <div class="container mx-auto p-3 md:p-8 sm:py-[80px]">
         <div class="text-center text-4xl font-bold mb-3">Who We Are</div>
-        <div class="flex text-center gap-4 justify-center">
+        <div class="flex flex-col sm:flex-row text-center gap-4 justify-center">
           <div class="space-y-2">
             <img
               src="./static/images/rituraj.jpeg"
@@ -52,7 +52,7 @@
         <h2 class="text-center text-4xl font-bold mb-3">How We Can Help?</h2>
 
         <div
-          class="grid grid-cols-2 max-w-screen-lg mx-auto items-center pb-[60px] gap-5"
+          class="grid md:grid-cols-2 max-w-screen-lg mx-auto items-center pb-[60px] gap-5"
         >
           <div>
             <img src="./static/images/agile.jpg" alt="agile" width="100%" />
@@ -63,42 +63,85 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-2 max-w-screen-md mx-auto items-center gap-5"
+          class="grid md:grid-cols-2 max-w-screen-lg mx-auto items-center gap-5"
         >
-          <div class="text-lg font-medium">
+          <div class="order-1 md:order-[0] text-lg font-medium">
             Enhancing your hiring process by conducting live technical
             assessments to ensure you bring in the right talent for your team.
           </div>
-          <div>
+          <div class="">
             <img src="./static/images/hiring.jpg" alt="hiring" width="100%" />
           </div>
         </div>
       </section>
 
       <!-- Companies We Have Helped -->
-      <section class="mt-8">
-        <h2 class="text-center text-4xl font-bold mb-3">
-          Companies We Have Helped
-        </h2>
-
-        <ul class="pl-6 list-none text-lg">
-          <li>
-            <strong>Arkifi Ai</strong>
-            - Built MVP backed by Khosla Ventures
-          </li>
-          <li>
-            <strong>Trnut North</strong> - Providing virtual trucking careers,
-            backed by Sam Altman, etc.
-          </li>
-          <li>
-            <strong>Globe Dx Exchange</strong> - Curtail exchange for all the
-            data
-          </li>
-          <li>
-            <strong>Genius Sheets </strong>- Curtail exchange for all the data
-          </li>
-          <li><strong>Noble AI</strong> - Noble Ai is building...</li>
-        </ul>
+      <section class="mt-8 text-center">
+        <h2 class="text-4xl font-bold mb-3">Companies We Have Helped</h2>
+        <div
+          class="grid md:grid-cols-2 max-w-screen-lg mx-auto items-center border"
+        >
+          <div class="py-[40px]">
+            <img
+              src="./static/images/arkifi-logo.svg"
+              alt="agile"
+              width="40%"
+              class="mx-auto"
+            />
+          </div>
+          <div class="text-lg font-medium p-[60px] bg-gray-50 border-l">
+            Built MVP backed by Khosla Ventures
+          </div>
+        </div>
+        <div
+          class="grid md:grid-cols-2 max-w-screen-lg mx-auto items-center border"
+        >
+          <div
+            class="order-1 md:order-[0] text-lg font-medium p-[60px] border-r bg-gray-50"
+          >
+            Providing virtual trucking careers, backed by Sam Altman, etc.
+          </div>
+          <div class="py-[40px]">
+            <img
+              src="./static/images/truenorth.png"
+              alt="hiring"
+              width="40%"
+              class="mx-auto"
+            />
+          </div>
+        </div>
+        <div
+          class="grid md:grid-cols-2 max-w-screen-lg mx-auto items-center border"
+        >
+          <div class="py-[40px]">
+            <img
+              src="./static/images/globe.png"
+              alt="agile"
+              width="40%"
+              class="mx-auto border-r"
+            />
+          </div>
+          <div class="text-lg font-medium py-[60px] border-l bg-gray-50">
+            Curtail exchange for all the data
+          </div>
+        </div>
+        <div
+          class="grid md:grid-cols-2 max-w-screen-lg mx-auto items-center border"
+        >
+          <div
+            class="order-1 md:order-[0] text-lg font-medium bg-gray-50 border-r py-[60px]"
+          >
+            Noble Ai is building...
+          </div>
+          <div class="py-[40px]">
+            <img
+              src="./static/images/noble-ai.jpeg"
+              alt="hiring"
+              width="40%"
+              class="mx-auto"
+            />
+          </div>
+        </div>
       </section>
 
       <!-- Contact Us -->
